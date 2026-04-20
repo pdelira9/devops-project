@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevOps Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>🚀 DevOps Dashboard</h1>
+
+    <div id="authBox" class="card">
+      <h2>Login</h2>
+      <input id="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+
+      <p id="authMsg"></p>
+    </div>
+
+    <div id="dashboard" class="card hidden">
+      <h2>System Status</h2>
+
+      <button onclick="checkHealth()">Check API</button>
+      <pre id="health"></pre>
+
+      <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
